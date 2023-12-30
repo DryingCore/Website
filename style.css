@@ -43,6 +43,11 @@ main h1 {
 	font-family: "Oswald", sans-serif;
 }
 
+main h1:after {
+	content: "_";
+	animation: animation_underline 2s infinite;
+}
+
 footer {
 	display: flex;
 	align-items: center;
@@ -54,6 +59,38 @@ footer {
 
 footer a {
 	margin: 2%;
+}
+
+footer a #three {
+	animation: animation_logo 2.5s linear infinite;
+}
+
+footer a #two {
+	animation: animation_logo 2s linear infinite;
+}
+
+footer a #one {
+	animation: animation_logo 1.5s linear infinite
+}
+
+/* Animação dos logotipos */
+@keyframes animation_logo {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-25%);
+	}
+}
+
+/* Animação tag h1 */
+@keyframes animation_underline {
+	0%, 100% {
+		opacity: 1;
+	} 
+	50% {
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
