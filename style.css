@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+header {
+	padding-top: 2.5%;
+	width: fit-content;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header img {
+	margin: auto;
+}
+
+header p {
+	margin-top: 4%;
+	font-size: 12pt;
+	line-height: 1;
+	font-family: "Montserrat", cursive;
+	text-align: center;
+}
+
+main {
+	margin-top: 5%;
+	text-align: center;
+}
+
+main h2 {
+	font-size: 30pt;
+	font-family: "Oswald", sans-serif;
+}
+
+main h1 {
+	font-size: 90pt;
+	font-family: "Oswald", sans-serif;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a {
+	margin: 2%;
+}
+
+@media screen and (max-width: 600px) {
+
+    header p {
+        font-size: 10pt;
+    }
+
+    main {
+        margin-top: 25%;
+    }
+
+    main h2 {
+        font-size: 20pt;
+    }
+
+    main h1 {
+        font-size: 50pt;
+    }
+}
