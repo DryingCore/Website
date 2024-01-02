@@ -87,12 +87,13 @@ footer a #two {
 }
 
 footer a #one {
-	animation: animation_logo 1.5s linear infinite
+	animation: animation_logo 1.5s linear infinite;
 }
 
 /* Animação dos logotipos */
 @keyframes animation_logo {
-	0%, 100% {
+	0%,
+	100% {
 		transform: translateY(0);
 	}
 	50% {
@@ -102,29 +103,29 @@ footer a #one {
 
 /* Animação tag h1 */
 @keyframes animation_underline {
-	0%, 100% {
+	0%,
+	100% {
 		opacity: 1;
-	} 
+	}
 	50% {
 		opacity: 0;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	header p {
+		font-size: 10pt;
+	}
 
-    header p {
-        font-size: 10pt;
-    }
+	main {
+		margin-top: 25%;
+	}
 
-    main {
-        margin-top: 25%;
-    }
+	main h2 {
+		font-size: 20pt;
+	}
 
-    main h2 {
-        font-size: 20pt;
-    }
-
-    main h1 {
-        font-size: 50pt;
-    }
+	main h1 {
+		font-size: 50pt;
+	}
 }
