@@ -9,8 +9,7 @@ html {
 }
 
 header {
-	padding-top: 2.5%;
-	width: fit-content;
+	padding-top: 1%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -21,11 +20,29 @@ header img {
 }
 
 header p {
-	margin-top: 4%;
+	margin-top: 1%;
 	font-size: 12pt;
 	line-height: 1;
 	font-family: "Montserrat", cursive;
 	text-align: center;
+}
+
+header nav {
+	background-color: #1e0200;
+	margin-top: 1%;
+	min-width: fit-content;
+}
+
+header nav .nav_list {
+	background-color: #471709;
+	width: 50%;
+	display: flex;
+	list-style: none;
+}
+
+header nav li {
+	color: white;
+	margin: 2%;
 }
 
 main {
