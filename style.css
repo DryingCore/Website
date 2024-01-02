@@ -8,6 +8,13 @@ html {
 	height: 100%;
 }
 
+:root {
+	--main-family: "Oswald", sans serif;
+	--nav-li: #471709;
+	--nav-bg: #1e0200;
+	--text-color: white;
+}
+
 header {
 	padding-top: 1%;
 	margin: auto;
@@ -19,6 +26,10 @@ header img {
 	margin: auto;
 }
 
+header img::selection {
+	background-color: var(--nav-bg);
+}
+
 header p {
 	margin-top: 1%;
 	font-size: 12pt;
@@ -27,22 +38,32 @@ header p {
 	text-align: center;
 }
 
+header p::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+}
+
 header nav {
-	background-color: #1e0200;
+	background-color: var(--nav-bg);
 	margin-top: 1%;
 	min-width: fit-content;
 }
 
 header nav .nav_list {
-	background-color: #471709;
+	background-color: var(--nav-li);
 	width: 50%;
 	display: flex;
 	list-style: none;
 }
 
 header nav li {
-	color: white;
+	color: var(--text-color);
 	margin: 2%;
+}
+
+header nav li::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
 }
 
 main {
@@ -52,17 +73,27 @@ main {
 
 main h2 {
 	font-size: 30pt;
-	font-family: "Oswald", sans-serif;
+	font-family: var(--main-family);
+}
+
+main h2::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
 }
 
 main h1 {
 	font-size: 90pt;
-	font-family: "Oswald", sans-serif;
+	font-family: var(--main-family);
 }
 
 main h1:after {
 	content: "_";
 	animation: animation_underline 2s infinite;
+}
+
+main h1::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
 }
 
 footer {
@@ -90,6 +121,10 @@ footer a #one {
 	animation: animation_logo 1.5s linear infinite;
 }
 
+footer a img::selection {
+	background-color: var(--nav-bg);
+}
+
 /* Animação dos logotipos */
 @keyframes animation_logo {
 	0%,
@@ -115,6 +150,26 @@ footer a #one {
 @media screen and (max-width: 600px) {
 	header p {
 		font-size: 10pt;
+	}
+
+	header nav {
+		background-color: var(--text-color);
+		margin-top: 1%;
+		min-width: fit-content;
+	}
+
+	header nav .nav_list {
+		background-color: var(--text-color);
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+
+	header nav li {
+		font-size: 10pt;
+		color: black;
+		margin: 2%;
 	}
 
 	main {
