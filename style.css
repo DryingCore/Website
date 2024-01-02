@@ -129,6 +129,18 @@ footer a {
 	margin: 2%;
 }
 
+footer a #three {
+	animation: animation_logo 2.5s linear infinite;
+}
+
+footer a #two {
+	animation: animation_logo 2s linear infinite;
+}
+
+footer a #one {
+	animation: animation_logo 1.5s linear infinite;
+}
+
 /* Animação dos logotipos */
 @keyframes animation_logo {
 	0%,
