@@ -172,6 +172,7 @@ footer a #one {
     .c001, .c002, .c003 {
         display: flex;
         flex-direction: column;
+		text-align: center;
     }
 
 	footer {
