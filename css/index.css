@@ -169,6 +169,10 @@ footer a #one {
 		font-size: 10pt;
 	}
 
+	header hr {
+		opacity: 0;
+	}
+
 	header nav {
 		margin-top: 1%;
 		min-width: fit-content;
