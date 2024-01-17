@@ -3,7 +3,7 @@ document.getElementById("home").addEventListener("click", () => {
 });
 
 document.getElementById("graduation").addEventListener("click", () => {
-	window.location.href = "../certificados.html";
+	window.location.href = "Website/certificados.html";
 });
 
 console.log(window.location)
