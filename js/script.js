@@ -1,9 +1,9 @@
 document.getElementById("home").addEventListener("click", () => {
-	window.location.href = "Website/index.html";
+	window.location.href = "index.html";
 });
 
 document.getElementById("graduation").addEventListener("click", () => {
-	window.location.href = "Website/certificados.html";
+	window.location.href = "certificados.html";
 });
 
 console.log(window.location)
