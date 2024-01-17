@@ -1,0 +1,21 @@
+/* Animação dos logotipos */
+@keyframes animation_logo {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-25%);
+	}
+}
+
+/* Animação tag h1 */
+@keyframes animation_underline {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}

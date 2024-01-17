@@ -1,0 +1,30 @@
+/* Estilos do conteúdo principal */
+main {
+	margin-top: 5%;
+	text-align: center;
+}
+
+main h2 {
+	font-size: 30pt;
+	font-family: var(--main-family);
+}
+
+main h2::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+}
+
+main h1 {
+	font-size: 90pt;
+	font-family: var(--main-family);
+}
+
+main h1:after {
+	content: "_";
+	animation: animation_underline 2s infinite;
+}
+
+main h1::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+}

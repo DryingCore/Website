@@ -1,0 +1,68 @@
+
+/* Estilos do cabeçalho */
+header {
+	padding-top: 1%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header img {
+	margin: auto;
+}
+
+header img::selection {
+	background-color: var(--nav-bg);
+}
+
+header p {
+	margin-top: 1%;
+	font-size: 12pt;
+	line-height: 1;
+	font-family: "Montserrat", cursive;
+	text-align: center;
+}
+
+header p::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+}
+
+header nav {
+	background-color: var(--nav-bg);
+	margin-top: 1%;
+	min-width: fit-content;
+}
+
+header nav .nav_list {
+	background-color: var(--nav-li);
+	width: 50%;
+	display: flex;
+	list-style: none;
+}
+
+header nav li {
+	color: var(--text-color);
+	margin: 2%;
+	position: relative;
+}
+
+header nav li::selection {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+}
+
+header nav li::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	bottom: -5px;
+	transition: width 0.3s ease-in-out;
+}
+
+header nav li:hover::after {
+	width: 100%;
+}

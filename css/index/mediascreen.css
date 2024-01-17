@@ -1,0 +1,55 @@
+/* Responsividade */
+@media screen and (max-width: 600px) {
+	header p {
+		font-size: 10pt;
+	}
+
+	header hr {
+		opacity: 0;
+	}
+
+	header nav {
+		margin-top: 1%;
+		min-width: fit-content;
+	}
+
+	header nav .nav_list {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		align-items: center;
+	}
+
+	header nav li {
+		font-size: 10pt;
+		color: black;
+		margin: 2%;
+		text-align: center;
+	}
+
+	header nav li::after {
+		bottom: -2px;
+	}
+
+	main {
+		margin-top: 20%;
+	}
+
+	main h2 {
+		font-size: 18pt;
+	}
+
+	main h1 {
+		font-size: 40pt;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	footer a {
+		margin: 2%;
+	}
+}
